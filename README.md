@@ -39,7 +39,7 @@ A estrutura do projeto segue a convenção do Next.js e foi organizada para faci
 - **`pages/receita/nova.tsx`**: Formulário para criar uma nova receita.
 - **`pages/receita/editar/[id].tsx`**: Formulário para editar uma receita existente.
 - **`components/Layout.tsx`**: Componente de layout que envolve todas as páginas, proporcionando uma estrutura consistente.
-- **`components/RecipeCard.tsx`**: Componente que exibe informações básicas de uma receita (usado na lista de receitas).
+- **`components/RecipeCard.tsx`**: Componente que exibe informações básicas de uma receita (usado na lista de receitas).(retirar)
 
 ## Instruções de Instalação e Execução
 
