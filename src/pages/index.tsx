@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
-import RecipeCard from "../components/RecipeCard";
+import '../styles/globals.css';
 
 interface Recipe {
   id: string;
@@ -15,7 +15,6 @@ const Home = () => {
   const [receitas, setReceitas] = useState<Recipe[]>([]);
   const router = useRouter();
 
-  // Carrega as receitas da MockAPI
   useEffect(() => {
     fetch("https://67446b56b4e2e04abea2237b.mockapi.io/api/t1/receitas")
       .then((response) => response.json())
@@ -29,13 +28,15 @@ const Home = () => {
 
   return (
     <Layout>
-      <h1>Receitas</h1>
-      <button
-        onClick={() => router.push("/receita/nova")}
-        className="btn btn-primary"
-      >
-        Criar nova receita
-      </button>
+      <h1 className="text-center">Receitas</h1>
+      <div className="center-container">
+        <button 
+          onClick={() => router.push("/receita/nova")}
+          className="btn btn-primary"
+        >
+          Criar nova receita
+        </button>
+      </div>
       <div className="recipe-list">
         {receitas.map((receita) => (
           <div key={receita.id} className="recipe-card">
