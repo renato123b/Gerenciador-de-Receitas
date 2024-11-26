@@ -1,103 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Estilo global básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-}
-
-h1 {
-  color: #333;
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* Layout de receita */
-.recipe-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.recipe-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.recipe-card h3 {
-  font-size: 1.2rem;
-  color: #4caf50;
-  margin-bottom: 10px;
-}
-
-.recipe-card p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-button.btn-primary {
-  background-color: #007bff;
-  color: white;
-}
-
-button.btn-danger {
-  background-color: #dc3545;
-  color: white;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Formulário de edição */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-form input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  background-color: #28a745;
-  color: white;
-}
-
-form button:hover {
-  opacity: 0.8;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Layout de receita */
+  #conteudo{
+    margin-left: 15px;
+    flex-wrap: wrap;
+  }
+  .recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-card h3 {
+    font-size: 1.2rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button.btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Formulário de edição */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  form button:hover {
+    opacity: 0.8;
+  }
